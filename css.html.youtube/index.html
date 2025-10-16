@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Style Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; }
+    .search-bar {
+      display: flex; justify-content: center; align-items: center;
+      padding: 15px; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky; top: 0; z-index: 100;
+    }
+    .search-bar input {
+      width: 60%; padding: 8px; border: 1px solid #ccc; border-radius: 20px;
+      outline: none; font-size: 16px;
+    }
+    .search-bar button { background: none; border: none; margin-left: -35px; cursor: pointer; }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 25px; padding: 20px; justify-items: center;
+    }
+    .video-card {
+      background: white; border-radius: 10px; overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .video-card:hover { transform: scale(1.02); }
+    iframe { width: 100%; height: 215px; border: none; }
+    .video-info { padding: 10px 15px; }
+    .video-title { font-weight: bold; font-size: 16px; margin-bottom: 5px; }
+    .channel-name { color: #606060; font-size: 14px; margin-bottom: 4px; }
+    .views { color: gray; font-size: 13px; margin-bottom: 5px; }
+    .description { color: #333; font-size: 14px; }
+  </style>
+</head>
+<body>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search">
+    <button><i class="fa fa-search"></i></button>
+  </div>
+
+  <div class="video-grid">
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/palMj0iq-3g" allowfullscreen></iframe>
+      <div class="video-info">
+        <div class="video-title">Brahmakalasha Kannada Video Song</div>
+        <div class="channel-name">Hombale Films</div>
+        <div class="views">7M views • 1 day ago</div>
+        <div class="description">Rishab Shetty returns in a grand celebration of Karnataka's folk culture. A must-watch Kannada video song.</div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/RSZQZDHD0Fs" allowfullscreen></iframe>
+      <div class="video-info">
+        <div class="video-title">Karna’s Majestic Entry | Prabhas as Suryaputra Karna</div>
+        <div class="channel-name">Netflix India</div>
+        <div class="views">10M views • 3 hours ago</div>
+        <div class="description">Experience the epic entry of Prabhas as Karna in this powerful Netflix teaser. Pure goosebumps!</div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/DkJJpbj8hWE" allowfullscreen></iframe>
+      <div class="video-info">
+        <div class="video-title">IPL 2026 Delhi Capitals & KKR Trade Update</div>
+        <div class="channel-name">Cricket Adda</div>
+        <div class="views">1.2M views • 5 hours ago</div>
+        <div class="description">Big trades in IPL 2026! DK’s surprising move and team reshuffles explained in detail.</div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/UZNNq9wv-qs" allowfullscreen></iframe>
+      <div class="video-info">
+        <div class="video-title">Fire and Water: Making The Avatar Films</div>
+        <div class="channel-name">Disney Plus</div>
+        <div class="views">900K views • 1 day ago</div>
+        <div class="description">Behind the scenes of Avatar’s latest chapter. Discover how motion capture and VFX magic were made real.</div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/FYz3GaprugM" allowfullscreen></iframe>
+      <div class="video-info">
+        <div class="video-title">Pushpa 2: The Rule | Official Teaser</div>
+        <div class="channel-name">Mythri Movie Makers</div>
+        <div class="views">15M views • 12 hours ago</div>
+        <div class="description">Allu Arjun is back! The most awaited Pushpa sequel teaser filled with intense action and drama.</div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/yfeCCnOPqrA" allowfullscreen></iframe>
+      <div class="video-info">
+        <div class="video-title">Virat Kohli Emotional Interview | Road to 2026</div>
+        <div class="channel-name">Star Sports India</div>
+        <div class="views">2.3M views • 2 days ago</div>
+        <div class="description">Virat opens up about his mental journey, fitness, and goals for the 2026 cricket season.</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
