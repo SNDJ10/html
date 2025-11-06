@@ -1,0 +1,28 @@
+#box{
+  height: 100px;
+  width: 200px;
+  border-width: 2px;
+  border-style: solid;
+  border-color:blue;
+  padding-left: 100px;
+  border-radius: 2px;
+  
+
+}
+#email{
+    border: 2px;
+
+
+
+
+}
+#button{
+width: 200px;
+margin: 200px;
+border-radius: 5px;
+border-color: blue;
+color: white;
+background-color: blue;
+
+
+}
