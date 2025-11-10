@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mock Amazon Header — Home Improvement</title>
+  <style>
+    /* Reset + base */
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.2;color:#111}
+
+    /* Top thin bar */
+    .topbar{
+      background:#131921; color:#fff; font-size:13px; padding:6px 16px; display:flex; align-items:center; justify-content:flex-end;
+    }
+    .topbar .deliver{margin-right:auto; font-size:13px}
+    .topbar a{color:#fff; text-decoration:none; margin-left:16px}
+
+    /* Main header */
+    .header{
+      display:flex; align-items:center; gap:16px; padding:12px 16px; background:linear-gradient(180deg,#fff,#f7f7f7);
+      border-bottom:1px solid #e6e6e6;
+    }
+    .logo{
+      display:flex; align-items:center; gap:8px; text-decoration:none; color:#111;
+    }
+    .logo img{width:110px; height:auto}
+
+    /* Search */
+    .search-wrap{flex:1; display:flex; align-items:center}
+    .search-category{
+      background:#eee; border:1px solid #ddd; padding:8px 12px; border-right:none; border-radius:4px 0 0 4px; font-size:14px; min-width:110px;
+    }
+    .search-input{
+      display:flex; flex:1; align-items:center; border:1px solid #ddd; border-left:none; border-radius:0 4px 4px 0; overflow:hidden;
+      background:#fff;
+    }
+    .search-input input{flex:1;padding:10px 12px;border:0;outline:none;font-size:16px}
+    .search-btn{padding:10px 16px;border-left:1px solid #ddd;background:#febd69;border-radius:0 4px 4px 0;cursor:pointer}
+
+    /* Right utilities */
+    .utils{display:flex; gap:12px; align-items:center}
+    .utils a{color:#111;text-decoration:none;font-size:14px}
+    .account{display:flex;flex-direction:column;font-size:12px;line-height:1}
+    .cart{position:relative}
+    .cart .count{position:absolute; top:-6px; right:-8px; background:#f08804;color:#fff;border-radius:50%;padding:3px 7px;font-size:12px}
+
+    /* Secondary nav */
+    .nav{
+      display:flex; gap:14px; padding:10px 16px; background:#232f3e; color:#fff; font-size:14px; overflow:auto;
+    }
+    .nav a{color:#fff; text-decoration:none; white-space:nowrap}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .logo img{width:80px}
+      .search-category{display:none}
+      .topbar{font-size:12px}
+      .header{padding:10px}
+    }
+
+    @media (max-width:520px){
+      .search-input input{font-size:14px}
+      .utils{display:none}
+    }
+
+    /* Small helper styles for demo content */
+    main{padding:24px}
+    h1{font-size:20px}
+  </style>
+</head>
+<body>
+  <!-- Top bar: delivery + quick links -->
+  <div class="topbar">
+    <div class="deliver">Delivering to <strong>Bengaluru 562130</strong> — <a href="#">Update location</a></div>
+    <a href="#">All</a>
+    <a href="#">Fresh</a>
+    <a href="#">MX Player</a>
+    <a href="#">Sell</a>
+    <a href="#">Bestsellers</a>
+    <a href="#">Today's Deals</a>
+    <a href="#">Mobiles</a>
+    <a href="#">New Releases</a>
+  </div>
+
+  <!-- Main header with logo, search and account/cart -->
+  <header class="header">
+    <a class="logo" href="#" aria-label="Home">
+      <!-- Replace with your logo image if you have one -->
+      <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='40'><rect width='220' height='40' fill='%23232f3e'/><text x='12' y='26' font-family='Arial' font-size='18' fill='%23fff'>amazon.in</text></svg>" alt="logo">
+    </a>
+
+    <div class="search-wrap">
+      <div class="search-category" role="listbox" aria-label="Search categories">All</div>
+      <div class="search-input" role="search">
+        <input type="search" placeholder="Search Amazon.in" aria-label="Search Amazon.in">
+        <button class="search-btn" aria-label="Search">Search</button>
+      </div>
+    </div>
+
+    <div class="utils">
+      <div class="account">
+        <span style="font-size:12px;color:#555">Hello, sign in</span>
+        <a href="#" style="font-weight:600; font-size:14px; color:#111">Account & Lists</a>
+      </div>
+      <div>
+        <a href="#">Returns<br><strong>& Orders</strong></a>
+      </div>
+      <div class="cart">
+        <a href="#">Cart</a>
+        <span class="count">1</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Secondary navigation -->
+  <nav class="nav" aria-label="Primary navigation">
+    <a href="#">Home Improvement</a>
+    <a href="#">Books</a>
+    <a href="#">Computers</a>
+    <a href="#">Electronics</a>
+    <a href="#">Prime - Home & Kitchen</a>
+    <a href="#">Fashion</a>
+    <a href="#">Amazon Pay</a>
+    <a href="#">Customer Service</a>
+    <a href="#">EN</a>
+    <a href="#">Search</a>
+  </nav>
+
+  <main>
+    <h1>Mock page content</h1>
+    <p>This is a responsive header mockup recreating the Amazon-like header items you listed. Open the HTML file in your browser to see it full width. You can swap the logo image, tweak colors, or split CSS into a separate file.</p>
+  </main>
+</body>
+</html>

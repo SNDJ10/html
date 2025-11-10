@@ -1,0 +1,15 @@
+a:link{
+    color:aqua;
+}
+a:visited{
+    color:blue
+}
+p:hover{
+    color:green;
+}
+a:hover{
+    color: black;
+}
+pactive{
+    background-color: red;;
+}
